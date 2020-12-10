@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2020년 2학기 서울과기대 VD 과제전</title>
+	<meta name="description" content="서울과학기술대학교 2020년 2학기 디자인학과 시각디자인전공 과제전">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta name=" theme-color" content="#003e7e">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://vd.seoultech.ac.kr">
+	<meta property="og:image" content="thumbnail.jpg">
+	<meta property="og:title" content="2020년 2학기 서울과기대 VD 과제전">
+	<meta property="og:description" content="서울과학기술대학교 2020년 2학기 디자인학과 시각디자인전공 과제전">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;
+			box-sizing: border-box;}
+		body,div,p,ul,li,h1,h2{margin:0; padding:0;}
+		body{background: black;}
+		section{display: flex;}
+		section div{color: white; width:50vw;}
+		h2,.class{font-size: 1.2em;margin-bottom: 0.6em;padding:0.2em 0.5em;
+			cursor: pointer;transition:all 0.5s;}	
+		.class:hover{background: white;color: black;font-size: 2em;}
+		#secondyr{text-align: right;}
+		#mainText{font-size: 3em;}
+		.tt{background: url(backwhite.gif); animation:infinite linear;}
+		
+		.a{height:150px; animation-name: aa;animation-duration:3s;background-size:auto 150px;}
+		@keyframes aa {to{background-position: -3150px;}}
+
+		.b{margin-top:-5px;height:25px; animation-name: bb;animation-duration:6s;background-size:auto 25px;}
+		@keyframes bb {to{background-position: -525px 0px;}}
+
+		.c{height:75px; animation-name: cc;animation-duration:4s;background-size:auto 75px;}	
+		@keyframes cc {to{background-position: -1575px 0px;}}
+
+		.d{height:16px; animation-name: dd;animation-duration:25s;background-size:auto 16px;}	
+		@keyframes dd {to{background-position: 821px 0px;}}
+
+		.e{height:100px; animation-name: ee;animation-duration:3s;background-size:auto 100px;}	
+		@keyframes ee {to{background-position: -2100px 0px;}}
+		#con:hover ~ {background: yellow;}
+		
+		
+		.stop{animation-play-state: paused;}
+		@media all
+  		and (max-width: 600px){
+  			h2,.class{font-size: 1em;}
+  			#secondyr{text-align: left;}
+  		}	
+	</style>
+</head>
+<body>
+	<div class="tt a"></div>
+	<div class="tt b"></div>
+	<div class="tt c"></div>
+	<div class="tt d"></div>
+	<div class="tt e"></div>
+	<section id="con">
+		<div id="secondyr">
+			<h2>2학년</h2>
+		</div>
+		<div id="thirdyr">
+			<h2>3학년</h2>
+		</div>
+	</section>
+<script type="text/javascript">
+var second = [
+"컴퓨터3D디자인<br>최보아",
+"모션그래픽스1<br>최은실",
+"모션그래픽스1<br>편정민",
+"UX디자인<br>안미경",
+"UX디자인<br>유은",
+"디지털이미지표현<br>이유리",
+"타이포그래피<br>강주현",
+"타이포그래피<br>박우혁",
+"디자인과마케팅<br>박승배"]
+
+var third = [
+"일러스트레이션스튜디오<br>차서윤",
+"편집디자인<br>강주현",
+"편집디자인<br>박우혁",
+"웹인터페이스디자인2<br>전양덕",
+"웹인터페이스디자인2<br>이병학",
+"일러스트레이션스튜디오<br>노미선",
+"UX디자인심화<br>이병학",
+"디지털영상표현2<br>백주미",
+"아이덴티티디자인2<br>이은실",
+"아이덴티티디자인2<br>한지연",
+"아이덴티티디자인2<br>장희목",
+"디자인론<br>송재연",
+"편집디자인<br>심대기"];
+for(var i=0; i<second.length; i++){
+	var t = document.createElement("h2");
+	t.className = "class";
+	t.innerHTML = second[i];
+	t.onmouseover = function(){ 
+		var r = document.getElementsByClassName("tt");
+		for(var i=0; i<r.length; i++){
+			r[i].style.anmationPlayState = "paused";
+		}
+	}
+	secondyr.appendChild(t);
+}
+for(var i=0; i<third.length; i++){
+	var s = document.createElement("h2");
+	s.className = "class";
+	
+	s.innerHTML = third[i];
+	thirdyr.appendChild(s);
+}
+
+function addClass(element, className) { 
+	element.className += " " + className; 
+};
+
+function removeClass(element, className) { 
+	var check = new RegExp("(\\s|^)" + className + "(\\s|$)"); 
+	element.className = element.className.replace(check, " ").trim(); 
+};
+
+</script>
+</body>
+</html>
