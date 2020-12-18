@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2020년 2학기 서울과기대 VD 과제전</title>
+	<meta name="description" content="서울과학기술대학교 2020년 2학기 디자인학과 시각디자인전공 과제전">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta name=" theme-color" content="#003e7e">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://vd.seoultech.ac.kr">
+	<meta property="og:image" content="thumbnail.jpg">
+	<meta property="og:title" content="2020년 2학기 서울과기대 VD 과제전">
+	<meta property="og:description" content="서울과학기술대학교 2020년 2학기 디자인학과 시각디자인전공 과제전">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;
+			box-sizing: border-box;}
+		body,div,p,ul,li,h1,h2{margin:0; padding:0;}
+		a{text-decoration: none; color:white;}
+		body{background: black;}
+		section{display: flex; width:1000px; margin:2em auto 6em;}
+		#secondyr, #thirdyr{color: white; width:50%;}
+		h2,.class{font-size: 1.2em;padding:0.2em 0.5em 0.6em;
+			cursor: pointer;transition:all 0.5s;}	
+		#secondcon{column-count: 2}
+		#thirdcon{column-count: 2}
+		.copy{column-count: 2}
+		.copym{display: none;}
+		#mainText{font-size: 3em;}
+		.tt{background: url(backwhite.gif); animation:infinite linear;}
+		
+		.a{height:150px; animation-name: aa;animation-duration:3s;background-size:auto 150px;}
+		@keyframes aa {to{background-position: -3150px;}}
+
+		.b{margin-top:-5px;height:25px; animation-name: bb;animation-duration:6s;background-size:auto 25px;}
+		@keyframes bb {to{background-position: -525px 0px;}}
+
+		.c{height:75px; animation-name: cc;animation-duration:4s;background-size:auto 75px;}	
+		@keyframes cc {to{background-position: -1575px 0px;}}
+
+		.d{height:16px; animation-name: dd;animation-duration:25s;background-size:auto 16px;}	
+		@keyframes dd {to{background-position: 821px 0px;}}
+
+		.e{height:100px; animation-name: ee;animation-duration:4s;background-size:auto 100px;}	
+		@keyframes ee {to{background-position: -2100px 0px;}}
+		
+		.stop{animation:dd 2s;}
+		@media all
+  		and (max-width: 600px){
+  			h2,.class{font-size: 1rem;}
+  			#secondcon{text-align: left;column-count: 1}
+  			#thirdcon{column-count: 1}
+  			.copy{display: none;}
+  			.copym{display: block;}
+  			section{width:100%;margin-top: 1em;}
+  		}	
+  		
+  		@media (hover: hover) {
+  			.class:hover{background: white; color:black;}
+  		}
+	</style>
+</head>
+<body>
+	<div class="tt a"></div>
+	<div class="tt b"></div>
+	<div class="tt c"></div>
+	<div class="tt d"></div>
+	<div class="tt e"></div>
+	<section>
+		<div id="secondyr">
+			<h2>2학년</h2>
+			<div id="secondcon"></div>
+			<div class='copy'>
+				<h2>&nbsp;<br>&nbsp;</h2>
+				<a href="https://vd.seoultech.ac.kr" target="blank">
+					<h2 class='class'>서울과학기술대학교<br>시각디자인전공</h2>
+				</a>
+				<h2>&nbsp;<br>&nbsp;</h2>
+				<a href="https://vd.seoultech.ac.kr" target="blank">
+					<h2 class='class'>vd.seoultech.ac.kr<br>&copy;2020</h2>
+				</a>
+			</div>
+			<div class='copym'>
+				<h2>&nbsp;<br>&nbsp;</h2>
+				<h2>&nbsp;<br>&nbsp;</h2>
+				<a href="https://vd.seoultech.ac.kr" target="blank">
+					<h2 class='class'>서울과학기술대학교<br>시각디자인전공</h2>
+				</a>
+				<a href="https://vd.seoultech.ac.kr" target="blank">
+					<h2 class='class'>vd.seoultech.ac.kr<br>&copy;2020</h2>
+				</a>
+			</div>
+		</div>
+		<div id="thirdyr">
+			<h2>3학년</h2>
+			<div id="thirdcon"></div>
+		</div>
+	</section>
+</div>
+<script type="text/javascript">
+var second = [
+["모션그래픽스1<br>편정민","https://www.youtube.com/watch?v=GMPCbyw3wR0&list=PL9rvqS8iIMeWqwte8Is_sTQxeulk3cOjK&ab_channel=%EC%9E%A5%EC%84%9C%ED%98%84"],
+["UX디자인<br>안미경","https://www.behance.net/uxdesimk"],
+["UX디자인<br>유은","https://www.behance.net/snad2020uxd"],
+["타이포그래피<br>박우혁","https://www.instagram.com/seoultech.typography/"],
+["디자인과마케팅<br>박승배","https://www.youtube.com/playlist?list=PLQxBw5r0KZaODw6hWed1wO1OtlyYfEme2"]
+];second.sort(function(a, b){return 0.5 - Math.random()});
+
+var third = [
+["일러스트레이션스튜디오<br>차서윤","https://www.behance.net/chacha28"],
+["웹인터페이스디자인2<br>이병학","https://lee-bh.github.io/20-12-webinterface-termfinal/"],
+["일러스트레이션스튜디오<br>노미선","https://www.behance.net/chacha28?isa0=1"],
+["UX디자인심화<br>이병학","http://leebh.net/lab/20-12-uxdesign/"],
+["디지털영상표현2<br>백주미","https://www.youtube.com/playlist?list=PLnz7vNbhKdltRkxPFuoGGYmPs_yFheXbf"],
+["아이덴티티디자인2<br>이은실","https://www.behance.net/identitysnad"],
+["아이덴티티디자인2<br>한지연","https://drive.google.com/drive/folders/1QHwlv7GEM3CtjlkjQQg_Rv9qObhGRvG6"],
+["아이덴티티디자인2<br>장희목","https://drive.google.com/drive/folders/1aG2qLSu2uQLBnkhkrZus86_mNUsKeKit"],
+["소셜미디어광고<br>권교영","https://drive.google.com/drive/folders/1aG2qLSu2uQLBnkhkrZus86_mNUsKeKit"],
+];third.sort(function(a, b){return 0.5 - Math.random()});
+for(var i=0; i<second.length; i++){
+	var tt = document.createElement("a");
+	tt.href = second[i][1]; tt.target = "_blank";
+	var t = document.createElement("h2");
+	t.className = "class";
+	t.innerHTML = second[i][0];
+	tt.appendChild(t);
+	secondcon.appendChild(tt);
+}
+
+for(var i=0; i<third.length; i++){
+	var ss = document.createElement("a");
+	ss.href = third[i][1]; ss.target = "_blank";
+	var s = document.createElement("h2");
+	s.className = "class";
+	s.innerHTML = third[i][0];
+	ss.appendChild(s);
+	thirdcon.appendChild(ss);
+}
+
+function removeClass(element, className) { 
+	var check = new RegExp("(\\s|^)" + className + "(\\s|$)"); 
+	element.className = element.className.replace(check, " ").trim(); 
+};
+
+</script>
+</body>
+</html>
